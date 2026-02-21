@@ -21,7 +21,7 @@ client.once('ready', async () => {
                 if (!err && row) {
                     const count = row.count;
                     client.user.setPresence({
-                        activities: [{ name: `${count} Players${count === 1 ? '' : 's'}`, type: 3 }], 
+                        activities: [{ name: `${count} Player${count === 1 ? '' : 's'}`, type: 3 }], 
                         status: 'dnd',
                     });
                 }
@@ -31,7 +31,7 @@ client.once('ready', async () => {
                 if (!err && row) {
                     const count = row.count;
                     client.user.setPresence({
-                        activities: [{ name: `${count} Installs${count === 1 ? '' : 's'}`, type: 3 }], 
+                        activities: [{ name: `${count} Install${count === 1 ? '' : 's'}`, type: 3 }], 
                         status: 'dnd',
                     });
                 }
